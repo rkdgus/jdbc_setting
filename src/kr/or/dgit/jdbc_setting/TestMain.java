@@ -18,7 +18,11 @@ public class TestMain {
 		DbService service = InitService.getInstance();
 		service.service();
 		
+		service = ImportService.getInstance();
+		service.service();
 		
+		service = ExportService.getInstance();
+		service.service();
 		
 		JdbcUtil.close(connection);
 
